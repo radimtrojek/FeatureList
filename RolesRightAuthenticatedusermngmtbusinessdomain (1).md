@@ -8,21 +8,21 @@ This feature provides protection against unauthorized access to Back-office appl
 ### BFU-0100101: Create role (Business function of feature)
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
-|Done|1|Roles|
+|Done|1|Roles|Roles|OP|
 
 It allows user to create new role(s) and setup up access rights according to organization security policy. 
 
 ### BFU-0100102: Remove role
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
-|Done|1|Roles|
+|Done|1|Roles|OP|
 
 It allows user to remove role regardless it is assigned to user in system or not. Once role is removed all affected users lost included access  permissions. 
 
 ### BFU-0100102: Setup permissions
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
-|Done|1|Roles|
+|Done|1|Roles|OP|
 
 It allows user to add access permissions to a role. Every added permission can be configured whether protected function is allowed or forbidden.
 * **Improvements:**
@@ -37,7 +37,7 @@ It allows user to add access permissions to a role. Every added permission can b
 ### BFU-0100103: Role Assignment
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
-|Done|1|Roles, Operators|
+|Done|1|Roles, Operators|OP|
 
 It allows user to assign or unassign a role(s) to/from a user. 
 * **Improvements:**
