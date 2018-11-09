@@ -1,0 +1,103 @@
+# Roles, Right, Authenticated user mngmt (business domain)
+
+## Rights & Roles mngt (Business feature)
+This feature provides protection against unauthorized access to Back-office applications functions and data. In general it follows Role-Based-Authorization approach.
+* **Improvements:**
+	* introduce more types of roles - Business access role and Administration access role so that business functions and system administration functions can be controlled separately.
+
+### Create role (Business function of feature)
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|Done|1|Roles|
+It allows user to create new role(s) and setup up access rights according to organization security policy. 
+
+### Remove role
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|Done|1|Roles|
+It allows user to remove role regardless it is assigned to user in system or not. Once role is removed all affected users lost included access  permissions. 
+
+### Setup permissions
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|Done|1|Roles|
+It allows user to add access permissions to a role. Every added permission can be configured whether protected function is allowed or forbidden.
+* **Improvements:**
+	* Business oriented access rights
+        * Use domains instead of MW apps (Loan, Task, Onboarding)
+        * Manage role together with rights from person perspective
+            * possibility to see
+                * roles
+                * Source of right (list of roles, direct assignment)
+	* access rights removal	- Main menu in BO app is not driven by this permission
+
+### Role Assignment
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|Done|1|Roles, Operators|
+It allows user to assign or unassign a role(s) to/from a user. 
+* **Improvements:**
+	* Bulk assignments
+	* List of role assignments per user
+
+### Individual permissions
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|in analysis|-|Roles, Operators|OP|It waits to RR refactor|
+It allows user to assign/unassign access permission directly to a user (role is omitted). This setup has impact on access rights evaluation process
+
+### Rights parametrisation
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|inDevelopment|0.1|System|OP|It waits to RR refactor|
+It provides parametrisation function which can be used by others system modules or applications to configure their permissions for their operations.
+* **Improvements:**
+	* introduce parametrisation according to ADR (translations and so on)
+
+### Business access role
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|NEW|-|Role|OP|It waits to RR refactor|
+Role in the system which allows to manage / use business functions but not admin functions. It is possible to manage business type of access roles.
+
+### System administrator role
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|NEW|-|Role|OP|It waits to RR refactor|
+Role in the system which allows to manage use admin functions but not business functions. It is possible to create "business user" but not to manage business type of access roles.
+
+### Initial admin setup
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|NEW|-|Installer|OP|It waits to RR refactor|
+It allows system administrator to setup initial admin credentials during system deployment. Initial admin gets system administrator role by design.
+
+
+## Rights Evaluation
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|NEW|-|System|OP|It waits to RR refactor|
+
+This feature allows system to determine whether user can access given function. In general the approach is what is not allowed is forbidden. What is explicitly forbidden is forbidden even if it is allowed from different assigned role.
+* **Improvements:**
+	* Not to transmit whole user access right configuration in every request and built single place for evaluation in real-time.
+	* Zero role assignment scenario is not solved
+
+
+## Segments rights
+* This will be solved by [FO application](https://uu04c4.axshare.com/#g=1&p=00_login_page) concept.
+
+
+## Sensitive data rights
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|NEW|-|System|OP|-|
+
+### Sensitive data paramerisation
+It allows user to configure what party data are sensitive or not.
+
+### Sensitive data protection
+It enable possibility to evaluate sensitive data and protect it against misuse.
+
+### Show sensitive data
+It allow to request and show protected sensitive data based on defined authorization.
