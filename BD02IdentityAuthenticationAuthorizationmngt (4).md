@@ -138,11 +138,11 @@ Login is special operation invalidates access token so that user requests is not
 	* Authenticated user management integration
 
 ## BFR-02004: Authentication/Authorization details
-There is two types of detail. Authentication type allows system to determine user identity of accessing person.  
-Authorization type verifies that the person who claims to be identity owner is identity owner.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP|Waiting for AA refactor|
+There is two types of detail. Authentication type allows system to determine user identity of accessing person.  
+Authorization type verifies that the person who claims to be identity owner is identity owner.
 
 ### BFU-0200401: Parametrize authentication details
 |Status|Version|Supported applications|Consumers|Note|
