@@ -8,7 +8,7 @@ This feature provides protection against unauthorized access to Back-office appl
 ### BFU-0100101: Create role (Business function of feature)
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
-|Done|1|Roles|Roles|OP|
+|Done|1|Roles|OP|
 
 It allows user to create new role(s) and setup up access rights according to organization security policy. 
 
