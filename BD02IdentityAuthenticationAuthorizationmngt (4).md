@@ -149,7 +149,7 @@ Authorization type verifies that the person who claims to be identity owner is i
 |------|------|-----------|-------------|---------------------|
 |NEW|-|System|OP|Waiting for AA refactor|
 It allows to configure what auth. details can be configured and used.
-* **Improvements**
+* **Improvments**
 	* introduce parametrisation according to ADR (translations and so on)
 
 
