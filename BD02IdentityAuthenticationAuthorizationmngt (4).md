@@ -14,6 +14,7 @@ Our approach is to allow more then one user account for one party which means th
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP, CUS|-|
+
 During party onboarding process the user account is created. We  call it user registration. To create user account at least user name needs to be defined. 
 
 ### BFU-0200102: Activate user account
@@ -23,12 +24,14 @@ During party onboarding process the user account is activated. When user account
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP, CUS|-|
+
 It allows system to lock user account when locking user account policy is breached. Number of attempt to authenticate can be parametrized.   
 
 ### BFU-0200107: Unlock user account
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP, CUS|-|
+
 It allows system to unlock locked user account by renew forgotten password process**ONLY**. 
 * **Improvements:**
 	* Unlock user account by operator
@@ -37,6 +40,7 @@ It allows system to unlock locked user account by renew forgotten password proce
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |NEW|-|System|OP|-|
+
 It allows user hard-block user account so that it is not possible to login until it is unblocked by operator. Temporary blockage.  
 Once blocked access token has to be invalidated.
 
@@ -44,6 +48,7 @@ Once blocked access token has to be invalidated.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |NEW|-|System|OP, System|-|
+
 It allows to deactivate active user account in case that customer or operator is offboarded. User account can be activated back within defined time interval.  
 Once deactivated access token has to be invalidated.
 
@@ -51,18 +56,21 @@ Once deactivated access token has to be invalidated.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |NEW|-|System|OP, CUS|-|
+
 It allows user to update user name when she requires. It has implication to contact mngt in case when email is required as user name.
 
 ## BFR-02002: Operator mngt
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP|-|
+
 Feature supports whole operator user account management. There are used function from different features like whole [User identity mngt](#BFR-02001:-User-identity-mngt) and [Role assignment](#BFR-02001:-User-identity-mngt). 
 
 ### BFU-0200202: Search operator
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP|-|
+
 It allows to search current operator in system via using full-text search within Operator party data.
 * **Improvements:**
 	* Search also via operator user account data like user name, phone, email
@@ -71,6 +79,7 @@ It allows to search current operator in system via using full-text search within
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP|-|
+
 It allows to update operator's full-name.
 * **Improvements:**
 	* Update also data like user name, phone, email. It has implication to enrolled authentication details.
@@ -79,9 +88,10 @@ It allows to update operator's full-name.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP|-|
+
 It allows to create and activate new operator. It can be configured from which step the process is configured by authentication scenario for createOperator operation.  
 Now email address is used as user name.  
-It is required that operator which is being created has to have at least one role assigned before first step is started,
+It is required that operator which is being created has to have at least one role assigned before first step is started.
 * **Improvements**
 	* Move configuration of the process from authetication acenarios to user activation.
 	* Zero rights check 
@@ -91,6 +101,7 @@ It is required that operator which is being created has to have at least one rol
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP|-|
 It allows to deactivate active user account in case that operator is offboarded.
+
 * **Improvements**
 	* Once deactivated access token has to be invalidated.
 	* User account can be activated back within defined time interval.  
@@ -99,6 +110,7 @@ It allows to deactivate active user account in case that operator is offboarded.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP,CUS|-|
+
 It provides multi-step authentication and enables to use multi-factor authentication. Potentially every operation in system can be authorized by various steps and factors.  
 * **Improvements**
 	* Smart scenario determination. System offers user only scenarios of which authentication details can be used in accessing channel.
@@ -107,6 +119,7 @@ It provides multi-step authentication and enables to use multi-factor authentica
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |inDevelopment|0.1|System|SYSTEM|Waiting for AA refactor| 
+
 It allows configure which operation will be authorized by which scenarios. One operation can have more scenarios. It can be configured which authentication details are included in given scenario and what is an ordering of steps. 
 * **Improvements**
 	* introduce parametrisation according to ADR (translations and so on)
@@ -115,6 +128,7 @@ It allows configure which operation will be authorized by which scenarios. One o
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|OP,CUS|SYSTEM|Waiting for AA refactor| 
+
 When system determines that being processed operation needs to be authorized by some scenario(s) system determines what scenario(s) suits for the user.  
 When user choses and starts a scenario system validates every step and once the scenario is finished an operation is allowed to be processed. 
 
@@ -124,6 +138,7 @@ When user choses and starts a scenario system validates every step and once the 
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP,CUS|Waiting for RR refactor| 
+
 Login is operation which is special and always requires in its scenario authentication detail so that system can unique identify user. Once scenario is validated a access token is created.  
 System supports account lock when parametrized number of attempt is exceeded.
 * **Improvements**
@@ -134,7 +149,7 @@ System supports account lock when parametrized number of attempt is exceeded.
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP,CUS|Waiting for RR refactor| 
 Login is special operation invalidates access token so that user requests is not processed anymore.
-**Improvements**
+* **Improvements**
 	* Authenticated user management integration
 
 ## BFR-02004: Authentication/Authorization details
@@ -162,6 +177,7 @@ It allows to configure what auth. details can be configured and used.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP,CUS|Waiting for AA refactor|
+
 It allows system to generate and validate OTP  which is send to user mobile number defined for auth. detail. It can be parametrized 
 * how often user can repeat sending OTP.
 * What OTP can be generated (Dictionary, Numbers, Characters) 
@@ -172,6 +188,7 @@ It allows system to generate and validate OTP  which is send to user mobile numb
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP,CUS|Waiting for AA refactor|
+
 It allows system to generate and validate https link which is send to email address number defined for auth. detail.
 It can be parametrized
 * how often user can repeat sending a link.
@@ -183,6 +200,7 @@ It can be parametrized
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP, CUS|Waiting for AA refactor|
+
 It allows system to keep and validate users passports in secured way (TODO-Method).
 It can be parametrized
 * how often user has to update password (TODO-check)
@@ -193,12 +211,14 @@ It can be parametrized
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP, CUS|Waiting for AA refactor|
+
 It allows to change password for authenticated users only.
 
 ### BFU-0200404: User name
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP, CUS|Waiting for AA refactor|
+
 Authentication detail used for identification of user account. Email address is very often used as User name as it is easily remembered by users. It has to be unique over all user accounts.
 * **Improvements**
 	* introduce another user name which is not subject of change as email address is so that we can shere it with systems which are exclusively used for managing specific mainly biometric auth. details.
@@ -256,12 +276,14 @@ It allows user to enroll device during onboarding process. Currently we can stor
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |NEW|-|Customer, SVC|OP, CUS|-|
+
 It allows user to block device in case that is lost or stolen but there is a possibility that can be returned.
 
 ### BFU-0200503: Remove device
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |NEW|-|Customer, SVC|OP, CUS|-|
+
 It allows user to remove device in case that is lost or stolen or not used anymore.
 
 ### BFU-0200504: Update device data
