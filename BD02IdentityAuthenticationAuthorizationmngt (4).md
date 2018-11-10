@@ -148,6 +148,7 @@ System supports account lock when parametrized number of attempt is exceeded.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|System|OP,CUS|Waiting for RR refactor| 
+
 Login is special operation invalidates access token so that user requests is not processed anymore.
 * **Improvements**
 	* Authenticated user management integration
