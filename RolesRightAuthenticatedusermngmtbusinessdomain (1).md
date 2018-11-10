@@ -1,4 +1,4 @@
-# BD-01: Roles, Right, Authenticated user mngmt (business domain)
+# BD-01: Roles, Rights, Authenticated user mngmt (business domain)
 
 ## BFR-01001: Rights & Roles mngt (Business feature)
 This feature provides protection against unauthorized access to Back-office applications functions and data. In general it follows Role-Based-Authorization approach.
