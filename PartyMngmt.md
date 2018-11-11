@@ -81,6 +81,7 @@ It allows user to remove existing not-primary contact information.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------:|-----------|-------------|---------------------|
 |Done|1|SVC|
+
 It allows user to see list of all set contacts.
 
 ## BFR-03003: Address mngt
