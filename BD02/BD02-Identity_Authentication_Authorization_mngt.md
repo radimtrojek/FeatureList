@@ -42,7 +42,7 @@ It allows system to unlock locked user account by renew forgotten password proce
 |NEW|-|System|OP|-|
 
 It allows user hard-block user account so that it is not possible to login until it is unblocked by operator. Temporary blockage.  
-Once blocked access token has to be invalidated.
+Once blocked access token has to be invalidated. TODO(add link to RR)
 
 ### BFU-0200105: Deactivate user account
 |Status|Version|Supported applications|Consumers|Note|
@@ -50,7 +50,7 @@ Once blocked access token has to be invalidated.
 |NEW|-|System|OP, System|-|
 
 It allows to deactivate active user account in case that customer or operator is offboarded. User account can be activated back within defined time interval.  
-Once deactivated access token has to be invalidated.
+Once deactivated access token has to be invalidated.TODO(add link to RR)
 
 ### BFU-0200106: Manage user name
 |Status|Version|Supported applications|Consumers|Note|
