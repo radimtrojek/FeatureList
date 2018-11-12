@@ -430,6 +430,7 @@ It allows to configure what types of relationship can be used.
 Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |New|-|Onboarding, SVC|OP|
+
 It allows user or system processes to set party segments. One party can have one or more segments. 
 
 ### BFU-03007001: Add / Remove segment
@@ -546,6 +547,7 @@ It allows to configure organisation (financial institution) data - address, Name
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |DONE|1|SVC|OP, CUS|
+
 This feature provides ability to keep party sources of incomes.
 
 
@@ -566,6 +568,7 @@ TODO(List of attributes)
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |New|-|SVC|OP|
+
  ... + history
 
 
