@@ -504,6 +504,7 @@ System supports overview of party documents especially for documents which are n
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |New|-|SVC|OP, CUS|
+
 It allows user to see list of documents and open all its attachments. Document detail contains information about when and by who document was uploaded.
 
 ### BFU-0301102: Upload party document
