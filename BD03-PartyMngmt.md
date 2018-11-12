@@ -81,6 +81,7 @@ It allows user to remove existing not-primary contact information.
 |Status|Version|Supported applications|Consumers|Note|
 |------|------:|-----------|-------------|---------------------|
 |Done|1|SVC|
+
 It allows user to see list of all set contacts.
 
 * **Improvements:**
@@ -161,7 +162,22 @@ It allows operator to overcome address verification and cleansing issue(s) by wa
 System differentiates between system verification status and operator verification status.
 
 ### BFU-0300305: Request for new POA doc
+|Status|Version|Supported applications|Consumers|Note|
+|------|------:|-----------|-------------|---------------------|
+|inDevelopment|0|Jumio, Onboarding|OP, CUS|
+
+It allows operator to request new POA document capture in case that address verification and cleansing or KYC went wrong.  
+Requested user is requested for upload and see operator message with instruction what was wrong.
+
+* **Improvements:**
+	* Address and POA history
+	
 ### BFU-0300309: Parametrize POA document types
+|Status|Version|Supported applications|Consumers|Note|
+|------|------:|-----------|-------------|---------------------|
+|inDevelopment|0|Jumio, Onboarding|OP, CUS|
+
+It allows to configure what types of POA documents can be capture. It needs to be also configured in 3rd party service.
 
 ### BFU-0300305: Remove address
 |Status|Version|Supported applications|Consumers|Note|
