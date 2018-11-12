@@ -500,7 +500,7 @@ System provides overview of granted consents and history.
 
 System supports overview of party documents especially for documents which are not related to supported business feature e.f. Death certificate, Divorce certificate and so on. 
 
-### BFU-0301101: party  Document overview
+### BFU-0301101: Party document overview
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
 |New|-|SVC|OP, CUS|
