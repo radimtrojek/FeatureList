@@ -203,12 +203,14 @@ This feature allows to manage and use different types of party identifiers. It c
 |Status|Version|Supported applications|Consumers|Note|
 |------|------:|-----------|-------------|---------------------|
 |Done|1|SVC|OP|
+
 This function allow user to configure types of party identifiers. It is basically key-value record-keeping.
 
 ### BFU-0300402: Manage identifiers
 |Status|Version|Supported applications|Consumers|Note|
 |------|------:|-----------|-------------|---------------------|
 |inAnasysis|0.1|SVC|OP|
+
 This function allow user to set an identifier value by system processes.
 
 **Improvements:**
