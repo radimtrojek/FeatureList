@@ -255,6 +255,13 @@ Auth. detail which validate user's four fingers biometric which is very secure. 
 
 Auth. detail which validate user's voice. Enrollment is done is onboarding process where biometric data are captured and stored.
 
+### BFU-0200408: Passcode
+|Status|Version|Supported applications|Consumers|Note|
+|------|------|-----------|-------------|---------------------|
+|inAnysis|1|System|OP, CUS|Waiting for AA refactor and partnership with Solgari|
+
+Auth. detail which validate user's passcode. Enrollment is done during onboarding process when Passcode is set by user. It is  easy-to-remenber 4-6 digits long number which is used in multi-step authentication to authorize sensitive operations e.g. Send funds especially on mobile devices.
+
 ## BFR-02005: Device mngt
 |Status|Version|Supported applications|Consumers|Note|
 |------|------|-----------|-------------|---------------------|
