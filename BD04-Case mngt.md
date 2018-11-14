@@ -1,4 +1,4 @@
-<span style="color:red"> TODO - instert links to BD03-PartyMngmt.md and BD02-Identity_Authentication_Authorization_mng as Case mngt uses their features a lot. </span>
+<span style="color:blue"> **!!! TODO - instert links to BD03-PartyMngmt.md and BD02-Identity_Authentication_Authorization_mng as Case mngt uses their features a lot.** </span>
 
 # BD-04: Case mngt
 |Status|Version|Supported applications|Consumers|Note|
